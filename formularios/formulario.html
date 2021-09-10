@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d031bd0397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <i class="fas fa-clipboard"></i>
+                <h2>REGISTRO<br>DE ESTABLECIMIENTO</h2>
+            </section>
+            <section class="info_items">
+                <p><i class="far fa-smile-wink"></i>Envianos los detalles </p>
+                <p><i class="fas fa-thumbs-up"></i>Pronto lo publicaremos</p>
+                <p>Banco Pichincha: 019232139 </p>
+                <p>Guayaquil: 021038210</p>
+            </section>
+        </section>
+        
+        <form class="form_contact" >
+            <div style="overflow: auto; width: 600px; height: 550px">
+            <h2>Registra tu Establecimiento</h2>
+            <div class="user_info">
+                <label for="names">Nombre del Establecimiento:</label>
+                <input type="text" id="names" placeholder="Nombre Completo" required="" name="nombre">
+                <p><b> Tipo de Establecimiento</b></p>	
+                <select class="" name="" required>
+                    <option></option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Balneario">Balneario</option>
+                    <option value="Sitio Turistico">Sitio Turistico</option>
+                    <option value="Hosteria">Hosteria</option>
+                </select>
+                <br>
+                <label for="imagenes">Agregar imagenes:</label>
+                <input type="file" id="imagenes">
+                <p><b> Tiempo de Duracion del Post</b></p>	
+                <select class="" name="" required>
+                    <option></option>
+                    <option value="1">1 mes</option>
+                    <option value="2">2 meses</option>
+                    <option value="3">3 meses</option>
+                    <option value="4">Mas de 3</option>
+                </select>
+                <label for="">Especifique (Si es mas de 3)</label>
+                <input type="number" required>
+                <p><b> Tipo de Pago</b></p>	
+                <select class="" name="" required>
+                    <option></option>
+                    <option value="transferencia">transferencia</option>
+                    <option value="tarjeta">tarjeta</option>
+                </select>
+                <h2>Contactos:</h2>
+                <label for="telefono">Telefonos*</label>
+                <input type="text" id="telefono" placeholder="Numeros de telefono" required="" name="">
+                <label for="direccion">Direccion</label>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.62856016077!2d-79.0533685279163!3d0.08153909976203565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2aa3f06c7cc6f7%3A0x3667c7918bfadde8!2sPedro%20Vicente%20Maldonado!5e0!3m2!1ses-419!2sec!4v1630441809708!5m2!1ses-419!2sec" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <br>
+                <label for="email">Correo electronico *</label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com"  required="" name="email">
+              
+                <div class="botones">
+                <button type="reset" >Borrar</button>
+                <button type="submit" onclick="" >Enviar Datos</button>
+                
+            </div>
+            </div>   
+        
+        </form>
+    </div> 
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>

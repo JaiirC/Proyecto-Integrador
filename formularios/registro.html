@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d031bd0397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reg.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <i class="fas fa-user"></i>
+                <h2>REGISTRO<br>DE USUARIOS</h2>
+            </section>
+            <section class="info_items">
+                <p><i class="fas fa-envelope"></i>Ya tienes cuenta? </p>
+                <p><i class="fas fa-address-card"></i><a href="file:///C:/Users/Leo/Desktop/login/Login_v1/index.html">Iniciar Sesion</a>
+            </section>
+        </section>
+<div class="form_contact">
+    <div style="overflow: auto; width: 600px; height: 550px">
+            <h2>Registrate</h2>
+            <div class="user_info">
+                <label for="nick">Nick *</label>
+                <input type="text" id="nick" placeholder="Nombre Completo" required="" name="nombre" >
+                <label for="nombre">Nombres *</label>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required="" name="nombre" >
+                <label for="apellido">Apellidos *</label>
+                <input type="text" id="apellido" placeholder="Nombre Completo" required="" name="nombre">
+                <label for="cedula">Cedula *</label>
+                <input type="text" id="cedula" placeholder="Nombre Completo" required="" name="nombre">
+                <label for="telefono">Telefono / Celular</label>
+                <input type="text" id="telefono" placeholder="0908...." required="" name="telefono">
+                <label for="correo">Correo electronico *</label>
+                <input type="email" id="correo" placeholder="ejemplo@gmail.com"  required="" name="email">
+                <label for="pass">Contraseña *</label>
+                <input type="password" id="pass" placeholder="******"  required="" name="email">
+                <p>Tipo de Cuenta:</p>	
+					<select class="" name="" required id="tipo">
+						<option></option>
+						<option value="Socio">Socio</option>
+						<option value="Usuario">Usuario</option>
+					</select>
+                    <br>
+                <div class="botones">
+                <button type="reset" >Borrar</button>
+                <button onclick="crearUsuario(nick.value,correo.value,pass.value)" >Registar Cuenta</button>
+                
+            </div>
+            </div>
+        </div>
+
+    </section>
+</div> 
+</body>
+<script src="script.js"></script>
+<script src="script_html.js"></script>
+</html>

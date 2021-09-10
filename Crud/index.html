@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body >
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#crud"  class="pollo">Crud </a><br>
+            <a href="#contacto"  class="pollo">Footer </a><br>
+            <a href="file:///C:/Users/Leo/Desktop/Proyecto%20FUNDAMENTOS/portada/portada.html"  class="pollo">Cerrar Sesion </a><br>
+        
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Agregar Usuarios</h1>
+            
+        </div>
+    </header>
+     <br><br><br>
+        <div class="container" id="crud">
+    <label for="cedula"><b>CEDULA:</b></label>
+    <input type="text" id="cedula" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+    <label for="nombre"><b>NOMBRE:</b></label>
+    <input type="text" id="nombre" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+    <label for="apellido"><b>APELLIDO:</b></label>
+    <input type="text" id="apellido" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    
+    <button class="btn btn-success" onclick="crearUsuario(cedula.value, nombre.value,apellido.value)">Crear</button>
+    
+    <button class="btn btn-dark" onclick="actualizarUsuario(cedula.value, nombre.value, apellido.value)">Actualizar</button>
+</div><br><br>
+    <div id= "listaUsuario" class="container">
+
+    <table class="table" >
+        <tr> <thead class="table-dark">
+            <th>Cedula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            
+            <th>Acciones</th>
+            <th></th>
+        </tr></thead>
+        <tbody id="listaUsuariosTabla"></tbody>
+    </table>
+</div>
+<br><br><br>
+<footer class="" id="contacto">
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/" class="social-media-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+            <a href="https://twitter.com/home" class="social-media-icon">
+            <i class='bx bxl-twitter'></i>
+          </a> 
+            <a href="https://www.instagram.com/?hl=es-la" class="social-media-icon">
+            <i class='bx bxl-instagram' ></i>
+          </a>
+        </div>
+    </div>
+    <div class="line"></div>
+  </footer>
+    <script src="script.js"></script>
+    <script src="script_html.js"></script>
+</body>
+</html>
